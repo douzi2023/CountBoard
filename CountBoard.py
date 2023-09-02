@@ -427,7 +427,8 @@ class MainWindow(CustomWindow):
                 ['主界面', "home.ico", self.show__, 2],
 
                 ["分隔符", None, None, 111],
-                ['删除全部', "del.ico", self.delall__, 7],
+                ['刷新日程', "refresh.ico", self.refresh_, 7],
+                ['删除全部', "del.ico", self.delall__, 8],
                 ['新建日程', "edit.ico", self.newtask__, 6]
             ],
             menu_style="iconic" if taskbar_icon else "normal",
@@ -858,7 +859,7 @@ class MainWindow(CustomWindow):
 
         ttk.Label(
             master=widget_frame4,
-            text='更新时间：2021年12月02日'
+            text='更新时间：2021年12月02日(patch:2023/9/1)'
         ).pack(side=tk.TOP, fill=tk.X)
 
         # 分割
